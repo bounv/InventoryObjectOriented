@@ -39,9 +39,10 @@ public class Main {
             for(Thing item : items) {
                 String checkbox = "[" + item.quantity + "]";
 
-                System.out.printf("%s %s %s %s\n", i, checkbox, item.name, item.category);
+                System.out.printf("%s %s %s (category: %s)\n", i, checkbox, item.name, item.category);
                 i ++ ;
             }
+            System.out.println("Available categories: beer, wine, champagne, liquor, sake");
             System.out.println();
             System.out.println("What do you want to do?");
             System.out.println();
